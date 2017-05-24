@@ -1,7 +1,16 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="14008000">
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Property Name="varPersistentID:{20DE95CA-DC34-4E3A-BE99-F3675CA01315}" Type="Ref">/マイ コンピュータ/View/SubPanel/名称未設定ライブラリ 1.lvlib/変数</Property>
 	<Item Name="マイ コンピュータ" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -48,7 +57,7 @@
 			<Item Name="Event" Type="Folder">
 				<Item Name="Ctl" Type="Folder">
 					<Item Name="enumCtrlEvent.ctl" Type="VI" URL="../Library/Event/Ctl/enumCtrlEvent.ctl"/>
-					<Item Name="Event Cluster.ctl" Type="VI" URL="../../../SKZ-LabVIEW/エンジンテストスタンド/Source - コピー/Common/UserEvent/Event Cluster.ctl"/>
+					<Item Name="Event Cluster.ctl" Type="VI" URL="../Library/Event/Ctl/Event Cluster.ctl"/>
 				</Item>
 				<Item Name="Create User Event.vi" Type="VI" URL="../Library/Event/Create User Event.vi"/>
 				<Item Name="Destroy User Event.vi" Type="VI" URL="../Library/Event/Destroy User Event.vi"/>
@@ -128,7 +137,7 @@
 			</Item>
 			<Item Name="Queue" Type="Folder">
 				<Item Name="Ctl" Type="Folder">
-					<Item Name="EventVariantData.ctl" Type="VI" URL="../Library/Event/Ctl/EventVariantData.ctl"/>
+					<Item Name="QueData.ctl" Type="VI" URL="../Library/Queue/QueData.ctl"/>
 				</Item>
 				<Item Name="old vi" Type="Folder">
 					<Item Name="DequeVa.vi" Type="VI" URL="../Library/Queue/old vi/DequeVa.vi"/>
